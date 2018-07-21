@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Legend of (Cat) Zelda</title>
+<style>
+  body {
+    background-color: lightsalmon;
+    padding: 60px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #1A5276;
+  }
+  .main-gif {
+    height: 500px;
+    width: 500px;
+  }
+  .container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .text {
+    background-color: #FEF5E7;
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-family: cursive;
+  }
+  #btn {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: #1A5276;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+  }
+  @media all and (max-width: 1300px) {
+    .container {
+      flex-direction: column-reverse;
+
+    }
+    .text {
+      margin-bottom: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img id="img" class="main-gif" src="images/zelda1.gif"></img>
+  <div class="text">
+    <h1>Zelda</h1>
+    <h3>Zelda is my cat. She is pretty much the coolest cat.</h3>
+    <p>Her hobbies include:</p>
+    <ul>
+      <li>Naptime</li>
+      <li>Meowing for snack</li>
+      <li>Eating things she shouldn't</li>
+      <li>Being cute</li>
+      <li>Meowing for no reason</li>
+    </ul>
+    <button id="btn">Change Picture</button>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
